@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "imperavi-kube",
+        "scope": null,
+        "escapedName": "imperavi-kube",
+        "name": "imperavi-kube",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\__________PROJECTS__________\\Biotronica\\project"
+    ]
+  ],
+  "_from": "imperavi-kube@latest",
+  "_id": "imperavi-kube@6.5.2",
+  "_inCache": true,
+  "_location": "/imperavi-kube",
+  "_nodeVersion": "7.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/imperavi-kube-6.5.2.tgz_1487010231292_0.7698429333977401"
+  },
+  "_npmUser": {
+    "name": "omnomios",
+    "email": "dev@stefan-kent.com"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "imperavi-kube",
+    "scope": null,
+    "escapedName": "imperavi-kube",
+    "name": "imperavi-kube",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/imperavi-kube/-/imperavi-kube-6.5.2.tgz",
+  "_shasum": "61af5ac9685ff5256579b3e11e6b31fdbd06dc75",
+  "_shrinkwrap": null,
+  "_spec": "imperavi-kube",
+  "_where": "D:\\__________PROJECTS__________\\Biotronica\\project",
+  "author": {
+    "name": "Imperavi LLC"
+  },
+  "bugs": {
+    "url": "https://github.com/vitoravelino/kube/issues"
+  },
+  "dependencies": {},
+  "description": "A web framework for professional developers and designers alike.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "61af5ac9685ff5256579b3e11e6b31fdbd06dc75",
+    "tarball": "https://registry.npmjs.org/imperavi-kube/-/imperavi-kube-6.5.2.tgz"
+  },
+  "gitHead": "bc88d0802bee12e56a4e6966e4b005eecce36d0b",
+  "homepage": "https://github.com/vitoravelino/kube#readme",
+  "keywords": [
+    "css",
+    "kube",
+    "framework",
+    "imperavi",
+    "sass"
+  ],
+  "license": "MIT",
+  "main": "dist/css/kube.css",
+  "maintainers": [
+    {
+      "name": "omnomios",
+      "email": "dev@stefan-kent.com"
+    }
+  ],
+  "name": "imperavi-kube",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitoravelino/kube.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.5.2"
+}

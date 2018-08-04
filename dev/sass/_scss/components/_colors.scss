@@ -1,0 +1,35 @@
+// Text Colors
+
+.black     { color: $color-black; }
+.inverted  { color: $color-inverted; }
+.error     { color: $color-error; }
+.success   { color: $color-success; }
+.warning   { color: $color-warning; }
+.focus     { color: $color-focus; }
+.aluminum  { color: $color-aluminum; }
+.silver    { color: $color-silver; }
+.lightgray { color: $color-lightgray; }
+.gray      { color: $color-gray; }
+.midgray   { color: $color-midgray; }
+.darkgray  { color: $color-darkgray; }
+.white		{ color: $color-inverted; }
+.strongpink  { color: $color-strongpink; }
+.vividpink { color: $color-vividpink !important; }
+
+.light-grayish-blue { color: $color-light-grayish-blue; }
+
+
+// border
+
+
+// Background Colors
+.bg-strongpink  { background-color: $color-strongpink; }
+.bg-vividpink  { background-color: $color-vividpink; }
+.bg-strongred  { background-color: $color-strongred; }
+.bg-lightgrayishblue     { background-color: $color-lightgrayishblue ; }
+.bg-white     { background-color: $color-white ; }
+
+
+.bg-error      { background-color: $color-error; }
+.bg-success    { background-color: $color-success; }
+.bg-warning    { background-color: $color-warning; }

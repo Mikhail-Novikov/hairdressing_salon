@@ -1,0 +1,104 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	max-width: 100%;
+	width: 100%;
+	empty-cells: show;
+	font-size: $table-font-size;
+	line-height: $table-base-line;
+	.slick-arrow{
+		background-color: transparent;
+		margin-top: 2px;
+		&:hover{
+			background-color: #ce001d;
+		}
+	}
+}
+table caption {
+    text-align: left;
+    font-size: $font-size-small;
+    font-weight: 500;
+    color: $color-midgray;
+}
+
+th {
+	text-align: center;
+	/* font-weight: 700; */
+	vertical-align: bottom;
+	background-color: #ce001d;
+	color: $color-white;	
+	text-transform: uppercase;
+
+}
+td {
+	vertical-align: middle;
+	color: $color-text-secondary;
+	a{
+		display: inline-block;
+		position: relative;
+		margin: 0;
+	}
+	&:last-child{
+		padding: 0;
+		text-align: center;
+	}
+	.icon{
+		display: inline-block;
+	}
+}
+tr.align-middle td,
+td.align-middle {
+    vertical-align: middle;
+}
+th,
+td {
+	padding: $table-padding-tb $table-padding-rl;
+	border-bottom: $table-border;
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+}
+tfoot th,
+tfoot td {
+	color: rgba($color-text, .5);
+}
+
+// Bordered
+table.bordered {
+
+	& td,
+	& th {
+		border: $table-border;
+	}
+
+}
+
+// Striped
+table.striped tr:nth-child(even) td {
+	background: $table-background-striped;
+}
+
+table.bordered,
+table.striped {
+	& td,
+	& th {
+		&:first-child {
+			padding-left: $table-padding-rl;
+		}
+		&:last-child {
+			padding-right: $table-padding-rl;
+		}
+	}
+}
+
+// Unstyled
+table.unstyled {
+	& td,
+	& th {
+		border: none;
+		padding: 0;
+	}
+}

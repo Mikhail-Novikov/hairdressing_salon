@@ -1,0 +1,264 @@
+// BREAKPOINTS
+// ---------------------------------------------------------------------------
+$sm: 768px !default;
+$md: 992px !default;
+$lg: 1200px !default;
+
+
+// WIDTH
+// ---------------------------------------------------------------------------
+$w-small: 480px !default;
+$w-medium: 600px !default;
+$w-big: 740px !default;
+$w-large: 840px !default;
+
+
+// Z-INDEX
+// ---------------------------------------------------------------------------
+$z-over-content: 100 !default;
+$z-over-control: 200 !default;
+$z-over-page: 300 !default;
+$z-over-screen: 400 !default;
+$z-over-all: 500 !default;
+
+
+// GRID
+// ---------------------------------------------------------------------------
+$grid-columns: 12 !default;
+$grid-gutter: 2% !default;
+
+
+// FONT FAMILY
+// ---------------------------------------------------------------------------
+
+
+
+$text-font-family: roboto, Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$text-font-family-roboto-light: Roboto-Light, Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$monospace-font-family: Consolas, Monaco, 'Courier New', monospace !default;
+$headings-font-family: Playfair Display !default;
+$buttons-font-family: $text-font-family !default;
+$input-font-family: $text-font-family !default;
+
+
+$monospace-font-family: Consolas, Monaco, 'Courier New', monospace !default;
+
+
+$headings-font-family: $text-font-family-lato !default; //стройдвор
+
+
+$buttons-font-family: $text-font-family !default;
+$input-font-family: $text-font-family !default;
+
+
+// COLORS
+// ---------------------------------------------------------------------------
+
+// Text
+$color-text: #62676c !default;
+$color-headings: #0d0d0e !default;
+$color-text-secondary: #98a0a8 !default;
+$color-text-link: #dd296e !default;
+
+
+// Links
+$color-link: #6c6d70 !default;
+$color-link-hover: #dd296e !default;
+
+// Button
+$color-button-primary: #1c86f2 !default;
+$color-button-primary-text: #fff !default;
+$color-button-secondary: #313439 !default;
+$color-button-secondary-text: #fff !default;
+
+$color-button-submit: #ce001d !default;
+$color-button-submit-text: #ce001d !default;
+
+// States
+$color-error:  #e76955 !default; // парик
+$color-success: #55e7a8 !default;
+$color-warning: #f7ba45 !default;
+$color-focus: #d8d8d8 !default; // парик
+
+// Extra
+$color-inverted: #fff !default;
+$color-highlight: #edf2ff !default; // color-focus 15% opacity
+
+// Grayscale
+$color-strongpink: #bd0864 !default;
+$color-vividpink: #ff0652 !default;
+$color-strongred: #d51114 !default;
+$color-lightgrayishblue: !default;
+
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-darkgray: #313439 !default;
+$color-midgray: #676b72 !default;
+$color-gray: transparent  !default; //стройдвор
+$color-lightgray: #d4d4d4 !default;
+$color-silver: #e0e1e1 !default;
+$color-aluminum: #f6f6f6 !default; // парикмахерская
+
+
+// TEXT
+// ---------------------------------------------------------------------------
+
+// Font Size
+$font-size: 13px !default;
+$font-size-smaller: $font-size - 4px !default;
+$font-size-small: $font-size - 1px !default;
+$font-size-big: $font-size + 1px !default;
+$font-size-large: $font-size + 4px !default;
+
+// Baseline
+$base-line: 15px !default;
+$base-line-smaller: 20px !default;
+$base-line-small: 20px !default;
+$base-line-big: 18px !default;
+$base-line-large: 32px !default;
+
+// Margin
+$text-margin-bottom: $font-size / 2.5 !default;
+
+
+// HEADINGS
+// ---------------------------------------------------------------------------
+
+// Font Size
+// By default: 60, 48, 36, 24, 21, 18, 16
+$heading-font-size-title: 20px !default; //парикмахерская
+$heading-font-size-1: 48px !default;
+
+$heading-font-size-2: 40px !default; //парикмахерская
+
+$heading-font-size-3: 14px !default;
+$heading-font-size-4: 21px !default;
+$heading-font-size-5: 18px !default;
+$heading-font-size-6: 16px !default;
+
+// Baseline
+$heading-base-line-title: 1.2 !default; //стройдвор
+$heading-base-line-1: 1.2 !default;
+$heading-base-line-2: 1.2 !default;  //стройдвор
+$heading-base-line-3: 20px !default;
+$heading-base-line-4: 32px !default;
+$heading-base-line-5: 28px !default;
+$heading-base-line-6: 24px !default;
+
+// Margin
+$heading-margin-bottom: $font-size / 2 !default;
+
+
+// TABLES
+// ---------------------------------------------------------------------------
+
+// Font Size
+/* $table-font-size: $font-size - 1px !default; */
+
+$table-font-size: $font-size !default;
+// Baseline
+$table-base-line: 1.2 !default;
+
+// Padding
+$table-padding-tb: 1rem !default;
+$table-padding-rl: 1rem !default;
+
+// Border
+
+$color-light-grayish-blue: #dde4ec !default; 
+$table-border: 1px solid #e4e7ea !default;
+
+// Striped
+$table-background-striped: $color-aluminum !default;
+
+
+// BUTTONS
+// ---------------------------------------------------------------------------
+
+// Font Size
+$button-font-size: 13px !default;
+$button-font-size-smaller: $button-font-size - 4px !default;
+$button-font-size-small: $button-font-size - 1px !default;
+$button-font-size-big: $button-font-size + 2px !default;
+$button-font-size-large: $button-font-size + 4px !default;
+
+// Baseline
+$button-base-line: 20px !default;
+
+// Height
+$button-height: 47px !default;
+$button-height-small: 36px !default;
+$button-height-big: 48px !default;
+$button-height-large: 56px !default;
+
+// Padding
+$button-padding-tb: 8px !default;
+$button-padding-rl: 20px !default;
+$button-padding-small-tb: 6px !default;
+$button-padding-small-rl: 20px !default;
+$button-padding-big-tb: 13px !default;
+$button-padding-big-rl: 24px !default;
+$button-padding-large-tb: 20px !default;
+$button-padding-large-rl: 36px !default;
+
+// Weight
+$button-font-weight: 500 !default;
+
+// Radius
+$button-border-radius: 1px !default;
+
+
+// INPUTS
+// ---------------------------------------------------------------------------
+
+// Font Size
+$input-font-size: 13px !default;
+$input-font-size-smaller: $input-font-size - 4px !default;
+$input-font-size-small: $input-font-size - 2px !default;
+$input-font-size-big: $input-font-size + 2px !default;
+$input-font-size-large: $input-font-size + 4px !default;
+
+// Baseline
+$textarea-base-line: $base-line !default;
+
+// Height
+$input-height: 47px !default; // парик
+$input-height-small: 28px !default;
+$input-height-big: 148px !default;
+$input-height-large: 56px !default;
+
+// Padding
+$input-padding-rl: 27px !default;
+$input-padding-small-rl: 12px !default;
+$input-padding-big-rl: 30px !default;
+$input-padding-large-rl: 12px !default;
+$input-textarea-padding-tb: 8px !default;
+
+// States
+$input-border-width: 1px !default;
+$input-border-color: $color-gray !default;
+$input-background-color: #f6f6f6 !default; //парик
+$input-box-shadow: none !default;
+
+$input-focus-background-color: #fff !default;
+$input-focus-border-color: $color-focus !default;
+$input-focus-box-shadow: none !default; //пари
+
+$input-error-background-color: #fff !default;
+$input-error-border-color: $color-error !default;
+$input-error-focus-box-shadow: none !default;//пари
+
+$input-success-background-color: #fff !default;
+$input-success-border-color: $color-success !default;
+$input-success-focus-box-shadow: none !default;//пари
+
+$input-disabled-opacity: .6;
+$input-disabled-color: rgba(0, 0, 0, .5);
+
+// Radius
+$input-border-radius: 0px !default; // парикмахерская
+$input-search-border-radius: 14px !default;
+
+// OVERLAY
+// ---------------------------------------------------------------------------
+$overlay-background-color: rgba(#fff, .95);

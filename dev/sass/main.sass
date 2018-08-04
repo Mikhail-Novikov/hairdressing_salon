@@ -1,0 +1,547 @@
+
+@import "./_common/_font"
+
+@import "./_mixins"
+@import "./_common/_mixins"
+@import "kube"
+
+
+@import "menu"
+//@import "./sprite"
+
+$base-color-yellow: #E7BD55
+$cl:  #4a4a4a
+$place-font-size: 12px
+
+.row
+  +grid-row()
+html, body
+  height: 100%;
+
+body
+  background: $color-inverted
+  font-family: $text-font-family
+  font-style: normal
+  font-size: $font-size
+  position: relative
+
+
+
+
+ul, li, nav
+  list-style: none outside none 
+  margin: 0
+  padding: 0
+  padding-left: 0
+.overlay
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  background: #fff
+  opacity: .8
+  z-index: 9998
+  display: none
+
+
+#preloader
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  background: #fff
+  z-index: 1001
+  i
+    font-size: 70px
+    position: absolute
+    left: 50%
+    top: 50%
+    margin: -35px 0 0 -35px
+.block-center
+  margin-left: auto !important
+  margin-right: auto !important
+.fz22
+ font-size: 22px
+
+.fz18
+ font-size: 18px
+.text-center
+  text-align: center
+.posr
+  position: relative
+.block
+  +justify()
+
+  p, a
+    line-height: normal
+.link
+  transition: 0.3s  
+  &:hover
+    color: #e7bd55 !important
+
+  
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding-left: 15px
+  padding-right: 15px
+  position: relative
+.wrap-logo 
+  vertical-align: middle
+  height: 85px
+  line-height: 85px
+  svg
+    max-width: 200px
+    vertical-align: middle    
+    display: inline-block
+
+
+// мобильное меню
+.wrap-h-contacts-mobile
+  display: none
+  text-align: center
+  position: absolute
+  top: 0
+  right: 15px
+.btn-open-menu
+  background-color: transparent
+  border: none
+  transition: 0.3s
+  padding: 20px 5px
+  float: right
+  &:hover 
+    background-color: transparent   
+    svg
+      transition: 0.3s     
+      fill: #d8d8d8
+
+    
+
+
+.header
+  height: 85px
+  width: 100%
+  background-color: #fff
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 10
+  .h-contacts-item
+    display: inline-block
+    line-height: 85px
+    p, a
+      color: #000000
+      font-family: Roboto
+      font-size: 14px
+      letter-spacing: 0.88px
+      text-decoration: none
+      margin-bottom: 0
+      display: inline-block
+      vertical-align: middle
+.fp-section.fp-table, .fp-slide.fp-table
+  overflow: hidden
+
+
+
+
+.services__block
+    min-height: 340px
+    max-width: 900px
+    width: 200%
+    margin-left: 65px
+    position: absolute
+    z-index: 10
+    bottom: 50%
+    transform: translateY(50%)
+    .services__block-title
+      margin: 0 0 0 30px
+      font-family: Playfair Display Italic
+      color: #000000
+      white-space: nowrap
+
+.services__block_slider
+  margin-top: 50px
+  div.items
+    margin: 30px auto
+    margin-right: 40px
+
+
+.cart_item-content
+  background-color: #fff
+  width: 266px;
+  height: 188px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  position: relative
+  z-index: 1
+
+.cart_item
+  position: relative 
+  width: 266px
+  height: 188px    
+  display: inline-block  
+  &:before
+    content: ''
+    border: 2px solid #e7bd55;
+    position: absolute
+    top: -30px
+    left: 20px
+    width: 228px
+    height: 238px
+    display: inline-block
+    z-index: 0
+
+
+.fp-tableCell
+  z-index: 0
+  position: relative
+  display: inline-table
+.left__content
+  position: absolute
+  left: 0
+  z-index: 2
+  background-color: #f6f6f6
+  top: 0
+  bottom: 0
+  width: 65%
+  box-shadow: -2px 0px 120px 0px rgba(10, 10, 10, 0.12);
+
+.right__image
+  position: absolute
+  right: 0
+  z-index: 1
+  top: 85px
+  bottom: 0
+  width: 100%
+  img
+    width: 100%
+
+// кастомизация слайдера
+
+.slick-track
+  margin-left: 0
+.slick-dots
+  text-align: center
+  margin-top: 16px
+  li
+    vertical-align: middle
+    display: inline-block
+    &.slick-active button
+      height: 10px
+      width: 10px  
+      background-color: #000 
+
+    button
+      background-color: #d8d8d8
+      padding: 0
+      border-radius: 50%
+      min-height: auto
+      height: 7px
+      width: 7px
+      font-size: 0
+      margin: 0 10px
+
+
+.text-rl
+  color: #4a4a4a;
+  font-family: Roboto-Light
+  font-size: 12px
+  letter-spacing: 2.44px  
+.text-rm
+  color: #4a4a4a
+  font-family: Roboto Medium
+  font-size: 18px
+  letter-spacing: 1px
+  line-height: 1.3
+
+.title-rbb
+  color: #e7bd55
+  font-family: Roboto-Bold
+  font-size: 22px
+  line-height: 20px
+  letter-spacing: 2px
+.cart_item-content
+  text-align: center  
+  padding: 15px
+  .text-rm
+    margin-top: 9px
+.cart_item-t
+  display: table
+  vertical-align: middle
+  height: 33px
+  width: 100%
+  color: $base-color-yellow
+  font-family: Roboto-Bold
+  font-size: 22px
+  letter-spacing: 2.44px
+  margin-top: 22px
+  height: 45px
+  line-height: 1
+  overflow: hidden
+  position: relative
+  span
+    display: table-cell
+    vertical-align: middle
+.line-bottom:after
+  content: ''
+  position: absolute
+  bottom: 14px
+  left: 50%
+  transform: translateX(-50%)
+  width: 52px
+  height: 1px
+  background-color: $base-color-yellow
+  display: block
+
+
+.cart_item-big
+  text-align: left
+  margin-left: 25px
+  max-width: 600px
+  min-height: 248px
+  border: 2px solid $base-color-yellow
+.cart_item-big-content
+  margin: 50px 15px 50px 50px
+  .line-bottom:after
+    bottom: -15px
+    left: 0
+    transform: translateX(0)
+  .title-rbb
+    margin-bottom: 25px
+  .text-rm
+    margin-top: 40px 
+
+.mb40
+  margin-bottom: 40px    
+.mt40
+  margin-top: 40px
+.mt50
+  margin-top: 50px
+
+.line-title
+  width: 52px
+  height: 1px  
+  background-color: $base-color-yellow
+  display: block
+  margin: 13px 0 18px
+
+//контакты
+.services__block.contacts
+  .text-rl
+    min-height: 30px
+  .services__block-title + .text-rm 
+    margin-left: 25px;
+    margin-bottom: 35px;
+  div.items
+    cursor: pointer
+
+    &:hover .cart_item
+      transition: 0.3s      
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1)
+
+.footer
+  height: 67px
+  background-color: transparent
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 10
+  .f-paginatation
+    width: 200px
+    line-height: 67px
+    height: 67px
+    float: left
+    text-align: center
+    background-color: #fff
+    img
+      position: absolute
+      left: 2px
+      top: 11px
+    .fp-arrow
+      margin: 0 13px
+      cursor: pointer
+      transition: color 0.3s
+      &:hover i
+        transition: color 0.3s        
+        color: #d8d8d8
+  .f-button
+    float: left    
+    width: 300px
+    height: 67px
+    line-height: 65px
+    background-color: #000
+    text-align: center
+    padding: 0
+    color: #ffffff
+    font-family: Roboto Medium
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.78px
+    transition: 0.3s
+    &:hover
+      background-color: $base-color-yellow
+
+
+  .fp-number-wrap 
+    display: inline-block
+    vertical-align: middle
+    min-width: 80px
+    min-height: 48px
+    position: relative
+
+  .fp-onepage , .fp-twopage, .fp-threepage, .fp-fourpage
+    display: none
+
+  
+.modal
+  text-align: center
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05)
+  background-color: #ffffff
+  display: none
+  width: 95% 
+  min-width: 300px
+  max-width: 630px
+  height: 442px
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -48%)
+  z-index: 9999 
+
+.modal-callback
+  width: 100%
+  max-width: 430px
+  display: inline-block
+  text-align: left
+
+  i.error 
+    color: #4a4a4a
+    font-family: Roboto-Light
+    font-size: 10px
+    font-weight: 300
+    letter-spacing: 0.83px
+    min-height: 18px
+    position: absolute
+    top: 100%
+    left: 0 
+    font-style: normal
+  .modal-checkbox-wrap
+    height: 70px
+    line-height: 70px
+    text-align: left
+    position: relative
+    .error
+     
+      line-height: 1.5
+    .checkbox-custom
+      width: 16px;
+      height: 16px;
+      border: 1px solid #d8d8d8;
+      border-radius: 0
+      margin-right: 6px
+
+
+  .checkbox__agreement
+    color: #4a4a4a
+    font-family: Roboto-Light
+    font-size: 10px    
+
+  .button.secondary
+    width: 260px
+    transition: 0.3s
+    &:hover
+      background-color: $base-color-yellow
+  .form-item
+    margin-top: 15px
+.line-title-modal
+  margin: 30px auto
+  width: 124px
+  height: 1px  
+  background-color: $base-color-yellow
+  display: block  
+
+
+.modal-close
+  height: 70px
+  cursor: pointer
+  text-align: right
+  span
+    padding: 3px
+    margin: 28px
+    display: inline-block
+    &:hover svg
+      fill: #d8d8d8;
+
+
+input
+  &::-webkit-input-placeholder 
+    color: $cl
+    text-align: left
+    font-size: $place-font-size
+    opacity: 1
+  &:focus::-webkit-input-placeholder
+    opacity: 0 
+
+  &::-moz-placeholder 
+    color: $cl
+    text-align: left
+    font-size: $place-font-size
+  &:focus::-moz-input-placeholder
+    opacity: 0  
+
+  &:-moz-placeholder
+    color: $cl
+    text-align: left
+    font-size: $place-font-size
+  &:focus:-moz-input-placeholder
+    opacity: 0  
+
+  &:-ms-input-placeholder
+    color: $cl
+    text-align: left
+    font-size: $place-font-size
+  &:focus:-ms-input-placeholder
+    opacity: 0 
+
+.psevd-input
+  border: 1px solid transparent
+  position: relative
+  span.zn
+    position: absolute
+    right: 0
+    height: 47px
+    width: 45px
+    top: 0
+    text-align: center
+    line-height: 47px
+    opacity: 0
+
+  input.valid
+    background: url(../images/modal/check.svg) no-repeat 95% center #fff
+    line-height: 19px; 
+    border-color: $color-success       
+  input.error
+    background: url(../images/modal/error-in.svg) no-repeat 95% center #fff
+    line-height: 19px;
+
+.map
+  height: 100%
+  width: 35%
+  float: right
+  .map-item
+    height: 100%  
+
+.js-send-ok
+  color: #4a4a4a
+  font-family: Roboto Medium
+  font-size: 14px;
+  line-height: 22px
+  letter-spacing: 1px;
+  line-height: 1.6
+  margin-top: 35px
+.js-send-ok
+  display: none
+@import "media"

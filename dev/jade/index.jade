@@ -1,0 +1,239 @@
+extends _common/_doctype
+
+block content
+	header.header 
+		.container
+			.row
+				.col.col-4.wrap-logo
+					include svg-logo/_logo.jade
+				.col.col-8.wrap-h-contacts
+					.block
+						.h-contacts-item
+							p запись по телефону   
+								a.link(href="tel:84957301049") 8 (495) 730-10-49
+						.h-contacts-item
+							a(href="https://instagram.com/_enjoy_your_self/").link instagram
+
+						.h-contacts-item
+							p ул. Генерала Глаголева, 30, к. 4
+				.wrap-h-contacts-mobile
+					.h-contacts-item
+						p запись по телефону   
+							a.link(href="tel:84957301049") 8 (495) 730-10-49					
+					button.btn-open-menu.js-open-menu
+						svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='24', height='19', viewbox='0 0 24 19')
+							defs
+								path#mob-icon(d='M454 3262h24v2.06h-24zm0 10.29v-2.06h24v2.06zm0 8.21v-2.04h24v2.04z')
+							g
+								g(transform='translate(-454 -3262)')
+									use( xlink:href='#mob-icon')
+
+	#fullpage.container
+
+		section.section
+			.col.left__content
+				.services__block
+					h1.h1.services__block-title Парикмахерский зал 
+
+					.services__block_slider.js-cart-slider
+						div.items
+							.cart_item
+								.cart_item-content
+									h4.cart_item-t
+										span.fz22 Bust Up
+									.line-title.block-center
+									p.text-rl прикорневой объем
+									p.text-rm от 2000 руб.
+						div.items
+							.cart_item
+								.cart_item-content
+									h4.cart_item-t
+										span.fz22 Ботокс 
+											br
+											|для волос
+									.line-title.block-center
+									p.text-rl глубокое восстановление
+									p.text-rm от 1500 руб.
+						div.items
+							.cart_item
+								.cart_item-content
+									h4.cart_item-t
+										span.fz22 Модельные стрижки
+									.line-title.block-center
+									p.text-rl женские и мужские
+									p.text-rm от 400 руб.
+						div.items
+							.cart_item
+								.cart_item-content
+						div.items
+							.cart_item
+								.cart_item-content
+						div.items
+							.cart_item
+								.cart_item-content
+
+			.col.right__image
+				img(src="images/rb1.jpg", alt="")
+
+
+
+		section.section
+
+			.col.left__content
+				.services__block
+					h2.h1.services__block-title Маникюрный зал
+
+					.services__block_slider.js-cart-slider
+						div.items
+							.cart_item
+								.cart_item-content
+									h4.cart_item-t
+										span.fz22 Маникюр + 
+											br
+											|шеллак
+									.line-title.block-center
+									p.text-rl аппаратный или ручной
+									p.text-rm 1150 руб.
+						div.items
+							.cart_item
+								.cart_item-content
+									h4.cart_item-t
+										span.fz22 Педикюр + 
+											br
+											|шеллак
+									.line-title.block-center
+									p.text-rl аппаратный или ручной
+									p.text-rm 1650 руб.
+						div.items
+							.cart_item
+								.cart_item-content
+									h4.cart_item-t
+										span.fz22 Парафиновая 
+											br
+											|терапия
+									.line-title.block-center
+									p.text-rl оздоровление кожи рук
+									p.text-rm 350 руб.
+						div.items
+							.cart_item
+								.cart_item-content
+						div.items
+							.cart_item
+								.cart_item-content
+						div.items
+							.cart_item
+								.cart_item-content
+
+			.col.right__image
+				img(src="images/rb2.jpg", alt="")
+
+
+		section.section
+
+			.col.left__content
+				.services__block
+					h3.h2.services__block-title Профессиональная косметика
+
+					.services__block-desc.mt50
+						div
+							.cart_item-big
+								.cart_item-big-content
+									h4.title-rbb
+										span.fz22.posr У нас вы можете приобрести профессиональную косметику
+									.line-title
+									p.text-rm Keune, Alterna, Toni&Guy, Wella Professionals и др.
+
+
+			.col.right__image
+				img(src="images/rb3.jpg", alt="")
+
+		section.section
+
+			.col.left__content
+				.services__block.contacts
+					h4.h1.services__block-title Контакты
+					p.text-rm.mt40 Мы ждём вас каждый день с 9:00 до 21:00 без выходных
+					.services__block_slider.js-cart-slider
+						div.items
+							.cart_item
+								.cart_item-content(data-lat="55.80179214638353" data-lng="37.54798950195307")
+									h4.cart_item-t
+										span.fz18 ул. Генерала 
+											br
+											|Глаголева, 30, к.4
+									.line-title.block-center
+									p.text-rl м. Октябрьское поле
+									p.text-rm 8 (495) 730-30-49
+						div.items
+							.cart_item
+								.cart_item-content(data-lat="55.70963491647906" data-lng="37.7635961914062")
+									h4.cart_item-t
+										span.fz18 ул. Нежинская, 17,
+											br
+											| к.2
+									.line-title.block-center
+									p.text-rl м. Раменки, Славянский 
+										br 
+										|бульвар, Минская
+									p.text-rm 8 (495) 532-14-54
+
+
+
+			.col.right__image
+				//- img(src="images/rb4.png", alt="")
+				.map
+					#map.map-item(data-marker="images/modal/oval-2.png")
+
+
+
+	footer.footer.hide-sm
+		.container
+			.f-paginatation
+				span.fp-arrow
+					i.icon-arrow-left 
+				span.fp-number-wrap
+					img.fp-onepage(src="images/page/1.png", alt="")
+					img.fp-twopage(src="images/page/2p.png", alt="")
+					img.fp-threepage(src="images/page/3p.png", alt="")
+					img.fp-fourpage(src="images/page/4p.png", alt="")
+
+				span.fp-arrow
+					i.icon-arrow-right
+			button.f-button.js-open-modal
+				span запишитесь на процедуру
+	
+
+	include modal/menu.jade 
+	.modal.js-show-modals 
+
+
+		div.modal-close
+			span.btn-close-modal
+				svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='19', height='19', viewbox='0 0 19 19')
+					defs
+						path#close-m(d='M778.96 1908.08l-1.08-1.08-8.4 8.4-8.4-8.4-1.08 1.08 8.4 8.4-8.4 8.4 1.08 1.08 8.4-8.4 8.4 8.4 1.08-1.08-8.4-8.4z')
+					g
+						g(transform='translate(-760 -1907)')
+							use( xlink:href='#close-m')
+		.modal-callback
+			h4.title-rbb.text-center Запишитесь на процедуру
+			.line-title-modal
+
+			form.modal-form.js-ajax-form(action="send_email.php")
+				.form-item
+					.psevd-input
+						input(type='text' name="nic" placeholder="Ваше имя" autocomplete="off" tabindex="1001" autofocus)
+	
+
+				.form-item
+					.psevd-input
+						input.js-mask(type='text' name="phone" placeholder="Номер телефона" autocomplete="off" tabindex="1002")
+				.js-send-ok "Готово! Мы перезвоним вам и предложим подходящую дату и время"
+				.js-btn-form
+					.form-item
+						button.button.secondary(type="submit" tabindex="1003") записаться
+					.form-item.text-left
+						label.modal-checkbox-wrap
+							input#regl.checkbox(type='checkbox' name="regl" tabindex="1004")
+							span.checkbox-custom
+							span.checkbox__agreement Я согласен на обработку персональных данных

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/fontello/icomoon.eot?dk8sx0');
+  src:  url('../fonts/fontello/icomoon.eot?dk8sx0#iefix') format('embedded-opentype'),
+    url('../fonts/fontello/icomoon.ttf?dk8sx0') format('truetype'),
+    url('../fonts/fontello/icomoon.woff?dk8sx0') format('woff'),
+    url('../fonts/fontello/icomoon.svg?dk8sx0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-check:before {
+  content: "\e900";
+  color: #55e7a8;
+}
+.icon-close:before {
+  content: "\e901";
+  color: #4a4a4a;
+}
+.icon-error-in:before {
+  content: "\e902";
+  color: #e76955;
+}
+.icon-gamb:before {
+  content: "\e903";
+  color: #4a4a4a;
+}
